@@ -97,16 +97,19 @@ hist(DoctorData$cntQual)
 
 boxplot(x = DoctorData$cntQual)
 
+qualSplit <- strsplit(DoctorData$Qualification[3], ',')
+#qualSplitM <- as.matrix(qualSplit)
 
+#qualSplitT <- as.table(qualSplit)
+
+qualSplitM[0,0]
 
 for (i in 1:7948) {
   b <- str_count(as.character(DoctorData$Qualification[i]), ",")
  
     for (j in 1:b){
-        
+             
     
     }
-  
-  
-  }
+   
 }
