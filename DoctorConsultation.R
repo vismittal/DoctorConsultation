@@ -5,6 +5,8 @@ install.packages('cowplot')    # used for combining multiple plots
 install.packages('stringr')
 install.packages('DescTools')
 install.packages('sqldf')
+install.packages('stringi')
+
 
 library(data.table) # used for reading and manipulation of data
 library(dplyr)      # used for data manipulation and joining
@@ -16,6 +18,7 @@ library(cowplot)    # used for combining multiple plots
 library(stringr)
 library(DescTools)
 library(sqldf)
+library(stringi)
 
 
 DoctorTrain <- read.csv(file = 'Final_Train.csv')
@@ -92,15 +95,11 @@ DocQual <- read.csv(file = 'DocQual.csv')
 
 View(DocQual)
 
-
 hist(DoctorData$cntQual)
-
 boxplot(x = DoctorData$cntQual)
 
-qualSplit <- strsplit(DoctorData$Qualification[3], ',')
-#qualSplitM <- as.matrix(qualSplit)
-
-#qualSplitT <- as.table(qualSplit)
+qualSplit <- unlist(strsplit(as.character(DoctorData$Qualification), ','))
+qualSplit
 
 qualSplitM[0,0]
 
@@ -111,5 +110,4 @@ for (i in 1:7948) {
              
     
     }
-   
 }
