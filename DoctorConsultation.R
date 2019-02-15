@@ -6,7 +6,7 @@ install.packages('stringr')
 install.packages('DescTools')
 install.packages('sqldf')
 install.packages('stringi')
-
+install.packages('gdata')
 
 library(data.table) # used for reading and manipulation of data
 library(dplyr)      # used for data manipulation and joining
@@ -19,7 +19,7 @@ library(stringr)
 library(DescTools)
 library(sqldf)
 library(stringi)
-
+library(gdata)
 
 DoctorTrain <- read.csv(file = 'Final_Train.csv')
 head(DoctorTrain)
@@ -69,7 +69,17 @@ for (i in 1:7948) {
 
 View(DoctorData)
 
-##### Analyse Qualifications ###
+########################### Analyse Qualifications ###
+### Remove unwanted ',' from Dermatology related qualifications
+
+strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology , Venereology%'")
+
+View (strDerma)
+write.csv(strDerma, file = 'Derma.csv')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Dermatology , Venereology', 'Dermatology Venereology')
+
+###
+
 b <- 0
 c <- 0
 for (i in 1:7948) {
@@ -101,13 +111,21 @@ boxplot(x = DoctorData$cntQual)
 qualSplit <- unlist(strsplit(as.character(DoctorData$Qualification), ','))
 qualSplit
 
-qualSplitM[0,0]
 
-for (i in 1:7948) {
-  b <- str_count(as.character(DoctorData$Qualification[i]), ",")
- 
-    for (j in 1:b){
-             
-    
-    }
-}
+doctor_uid_required=rep(DoctorData$DocNo, DoctorData$cntQual)
+
+doctor_qual_df=data.frame(doctor_uid_required, qualSplit)
+doctor_qual_df
+
+sqldf("select Distinct  qualSplit from doctor_qual_df where qualSplit like '%Venereology & Leprosy%'")
+
+
+View(doctor_qual_df)
+
+write.csv(x = unique(trim(doctor_qual_df$qualSplit)),file = 'Unique_Qual.csv')
+
+
+
+DoctorData$
+
+sqldf("select Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
