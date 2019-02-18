@@ -60,12 +60,11 @@ for (i in 1:7948) {
 }
 
 
+unique(DoctorData$Locality)
+unique(DoctorData$city)
+
+
 #### Qualification
-## No of qualifications ###
-for (i in 1:7948) {
-  b <- str_count(as.character(DoctorData$Qualification[i]), ",")
-  DoctorData$cntQual[i] <- b+1 
-}
 
 View(DoctorData)
 
@@ -75,24 +74,60 @@ View(DoctorData)
 strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology , Venereology%'")
 
 View (strDerma)
+
+StrVener <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
+
+write.csv(x = unique(trim(StrVener)), 'Venerelogy.csv')
+
 write.csv(strDerma, file = 'Derma.csv')
 DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Dermatology , Venereology', 'Dermatology Venereology')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Dermatology, Venereology', 'Dermatology Venereology')
 
-###
+strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology ,Venereology%'")
 
-b <- 0
-c <- 0
+StrMS <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%MS,%'")
+
+View(StrMS)
+
+StrDiabetes <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Diabetes%'")
+StrDiabetes <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Diabetes & Metabolism%'")
+StrDiabetes <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Diploma in Diabetes%'")
+
+View(StrDiabetes)
+
+write.csv(StrDiabetes, file = 'Diabetes.csv')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Endocrinology, Diabetes, Metabolism',
+                                        'Endocrinology & Diabetes & Metabolism')
+
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Endocrinology, Diabetes & Metabolism',
+                                        'Endocrinology & Diabetes & Metabolism')
+
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Endocrinology, Diabetes & Metabolism',
+                                        'Endocrinology & Diabetes & Metabolism')
+
+
+
+
+## No of qualifications ###
 for (i in 1:7948) {
   b <- str_count(as.character(DoctorData$Qualification[i]), ",")
-  if (as.numeric(b) > as.numeric(c)) {
-    c <- b
-    d <- i
-    qual <- as.character(DoctorData$Qualification[i])
-  }
+  DoctorData$cntQual[i] <- b+1 
 }
 
-DoctorData$DocNo <- NA
+###
+# b <- 0
+# c <- 0
+# for (i in 1:7948) {
+#   b <- str_count(as.character(DoctorData$Qualification[i]), ",")
+# 
+#     if (as.numeric(b) > as.numeric(c)) {
+#     c <- b
+#     d <- i
+#     qual <- as.character(DoctorData$Qualification[i])
+#   }
+# }
 
+DoctorData$DocNo <- NA
 View(DoctorData)
 
 for (i in 1:7948) {
@@ -111,21 +146,23 @@ boxplot(x = DoctorData$cntQual)
 qualSplit <- unlist(strsplit(as.character(DoctorData$Qualification), ','))
 qualSplit
 
-
 doctor_uid_required=rep(DoctorData$DocNo, DoctorData$cntQual)
 
 doctor_qual_df=data.frame(doctor_uid_required, qualSplit)
 doctor_qual_df
 
-sqldf("select Distinct  qualSplit from doctor_qual_df where qualSplit like '%Venereology & Leprosy%'")
+QualificationUnq = unique(trim(doctor_qual_df$qualSplit))
+View(QualificationUnq)
 
+write.csv(x = QualificationUnq, file = 'QualificationUniq.csv')
 
-View(doctor_qual_df)
-
-write.csv(x = unique(trim(doctor_qual_df$qualSplit)),file = 'Unique_Qual.csv')
-
-
-
-DoctorData$
-
-sqldf("select Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
+# sqldf("select Distinct  qualSplit from doctor_qual_df where qualSplit like '%Venereology & Leprosy%'")
+# View(doctor_qual_df)
+# 
+# write.csv(x = unique(trim(doctor_qual_df$qualSplit)),file = 'Unique_Qual.csv')
+# 
+# 
+# 
+# DoctorData$
+#   
+#   sqldf("select Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
