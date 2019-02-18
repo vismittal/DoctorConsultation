@@ -7,6 +7,8 @@ install.packages('DescTools')
 install.packages('sqldf')
 install.packages('stringi')
 install.packages('gdata')
+install.packages('ngram')      # used for concatinating strings
+
 
 library(data.table) # used for reading and manipulation of data
 library(dplyr)      # used for data manipulation and joining
@@ -20,6 +22,7 @@ library(DescTools)
 library(sqldf)
 library(stringi)
 library(gdata)
+library(ngram)
 
 DoctorTrain <- read.csv(file = 'Final_Train.csv')
 head(DoctorTrain)
@@ -156,13 +159,45 @@ View(QualificationUnq)
 
 write.csv(x = QualificationUnq, file = 'QualificationUniq.csv')
 
-# sqldf("select Distinct  qualSplit from doctor_qual_df where qualSplit like '%Venereology & Leprosy%'")
-# View(doctor_qual_df)
-# 
-# write.csv(x = unique(trim(doctor_qual_df$qualSplit)),file = 'Unique_Qual.csv')
-# 
-# 
-# 
-# DoctorData$
-#   
-#   sqldf("select Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
+
+QualLevel <- read.csv(file = 'QualificationUniq 30.csv')
+View(QualLevel)
+
+### Doctor to highest level of qualification
+
+DoctorData$qualLevel <- NA
+DoctorData$Seq1 <- NA
+
+k <- 0
+
+for (k in 1:7948) {
+
+  print (concatenate('k == ', k))
+    
+  DocNo <- k
+  
+  print (concatenate('DocNo == ', DocNo))
+  
+  sqlStrQual <- concatenate('select * 
+          from doctor_qual_df,  QualLevel
+          on trim(QualLevel.Qualification) = trim(doctor_qual_df.qualSplit)
+          where doctor_qual_df.doctor_uid_required = ', DocNo ,' order by doctor_qual_df.doctor_uid_required,
+          QualLevel.Seq1 desc')
+  
+  #print (concatenate('sqlStrQual == ', sqlStrQual))
+  
+  a <- sqldf(sqlStrQual)
+  
+  
+  print(a)
+  
+  DoctorData$qualLevel [DocNo] <- as.character(a[1,5])
+  DoctorData$Seq1 [DocNo] <- a[1,7]
+  
+  a <- NA
+  
+}
+
+View (DoctorData)
+
+write.csv(x = DoctorData, 'DoctorData.csv')
