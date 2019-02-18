@@ -1,0 +1,897 @@
+Sno,Qualification,Level,QualYN,Seq1
+1,BHMS,B Degree,Y,2
+2,MD - Homeopathy,PG Degree,Y,4
+3,BAMS,B Degree,Y,2
+4,MD - Ayurveda Medicine,PG Degree,Y,4
+5,MBBS,B Degree,Y,2
+6,MS - Otorhinolaryngology,PG Degree,Y,4
+7,BSc - Zoology,B Degree,Y,2
+8,BDS,B Degree,Y,2
+9,MD - General Medicine,PG Degree,Y,4
+10,BSc,B Degree,Y,2
+11,MS,PG Degree,Y,4
+12,DNB - ENT,PG Degree,Y,4
+13,MDS,PG Degree,Y,4
+14,MDS - Oral & Maxillofacial Surgery,PG Degree,Y,4
+15,Diploma in Otorhinolaryngology (DLO),PG Diploma,Y,3
+16,MF- Homeopathy,PG Degree,Y,4
+17,MS - ENT,PG Degree,Y,4
+18,DNB,PG Degree,Y,4
+19,Fellowship of College of General Practice (FCGP),Fellowship,Y,5
+20,DDVL,PG Diploma,Y,3
+21,IBCLC (USA),Certification,N,
+22,Post Graduate Diploma in Diabetology (PGDD),PG Diploma,Y,3
+23,Diploma in Dermatology,PG Diploma,Y,3
+24,Fellowship in Aesthetic Medicine,Fellowship,Y,5
+25,DM - Neurology,Fellowship,Y,5
+26,MD - Pediatrics,PG Degree,Y,4
+27,Fellowship in Cleft Lip and Craniofacial Surgery,Fellowship,Y,5
+28,Diploma in Cosmetology,PG Diploma,Y,3
+29,AFIH,Membership,N,
+30,MDS - Prosthodontist And Crown Bridge,PG Degree,Y,4
+31,M. D. Hom. (Practice of Medicine),PG Degree,Y,4
+32,Diploma in Emergency Medicine,PG Diploma,Y,3
+33,Diploma in Counselling Skills,PG Diploma,Y,3
+34,DHMS (Diploma in Homeopathic Medicine and Surgery),PG Diploma,Y,3
+35,MD - Dermatology,PG Degree,Y,4
+36,Venereology & Leprosy,Ignore,N,
+37,MDS - Oral and Maxillofacial Pathology,PG Degree,Y,4
+38,MFDS RCS,Membership,N,
+39,MRCS (UK),Membership,N,
+40,FRGUHS,Membership,N,
+41,Fellowship in Dermatological Laser Surgery,Fellowship,Y,5
+42,Member of the Royal College of Physicians UK (MRCP UK),Membership,N,
+43,UK (MRCP UK),Ignore,N,
+44,MNAMS- Family Medicine,0,N,
+45,MD - Medicine,PG Degree,Y,4
+46,MS - Psychology,PG Degree,Y,4
+47,Diploma In Skin Aesthetics,PG Diploma,Y,3
+48,MDS - Periodontology and Oral Implantology,PG Degree,Y,4
+49,Certificate in Cosmetic Dentistry,Certification,N,
+50,Post Graduate Certificate in Endodontics (PGCE),Certification,N,
+51,Fellow of Academy of General Education (FAGE),Membership,N,
+52,MD - Rheumatology,PG Degree,Y,4
+53,MDS - Paedodontics And Preventive Dentistry,PG Degree,Y,4
+54,MDS-Oral Pathology and Oral Microbiology,PG Degree,Y,4
+55,FRCP,Management,N,
+56,Doctor of Science (DSc.),0,N,
+57,D.LITT - Diabetology,0,N,
+58,DDV,Diploma,Y,1
+59,MDS - Conservative Dentistry & Endodontics,PG Degree,Y,4
+60,FICD,Membership,N,
+61,Post Graduate Diploma in Emergency Services (PGDEMS),PG Diploma,Y,3
+62,Get inspired by remarkable stories of people like you,0,N,
+63,MD - Acupuncture,PG Degree,Y,4
+64,Master of Hospital Administration,Management,N,
+65,BA,B Degree,Y,2
+66,MDS - Periodontics,PG Degree,Y,4
+67,PGD in Endodontics,PG Diploma,Y,3
+68,MDS - Pedodontics,PG Degree,Y,4
+69,PhD - Orthodontics & Dentofacial Orthopaedics,Fellowship,Y,5
+70,MOrth,0,N,
+71,MS - Ayurveda,PG Degree,Y,4
+72,MRCPS,Membership,N,
+73,P.G Diploma in Aesthetic Dentistry,PG Diploma,Y,3
+74,MD - Tuberculosis & Respiratory Diseases/Medicine,PG Degree,Y,4
+75,MS - General Surgery,PG Degree,Y,4
+76,Diploma in Health Administration,Management,N,
+77,MD - Skin & VD,PG Degree,Y,4
+78,FAMS - Fellowship of the Academy Medicine,Fellowship,Y,5
+79,MD - Internal Medicine,PG Degree,Y,4
+80,DNB - Internal Medicine,PG Degree,Y,4
+81,FRCS - General Surgery,Membership,N,
+82,PhD - Homoeopathy,Fellowship,Y,5
+83,Certificate in Dental Implants,Certification,N,
+84,MDS - Orthodontics and Dentofacial Orthopaedics,PG Degree,Y,4
+85,DNB - Family Medicine,PG Degree,Y,4
+86,MS - Pediatric,PG Degree,Y,4
+87,Member of the Royal Society for the Promotion of Health (UK) (MRSH),Membership,N,
+88,Post Graduate Diploma in Endocrinology,PG Diploma,Y,3
+89,MDS - Prosthodontics,PG Degree,Y,4
+90,M.Sc.- Clinical Nutrition and Dietetics,PG Degree,Y,4
+91,MSc - Psychotherapy And Counselling,PG Degree,Y,4
+92,MS (Shalyatantra),PG Degree,Y,4
+93,MSc - Yoga,PG Degree,Y,4
+94,DLO,PG Diploma,Y,3
+95,Post Graduate Diploma in Advanced Implantology,PG Diploma,Y,3
+96,MD - Alternate Medicine,PG Degree,Y,4
+97,Post Graduate Diploma in Counselling & Psychotherapy,PG Diploma,Y,3
+98,MS - Counselling & Psychotherapy,PG Degree,Y,4
+99,PhD - Alternative Medicine,Fellowship,Y,5
+100,Fellowship in Oral implantlogy,Fellowship,Y,5
+101,Diploma in Personal Counselling Skills (DPCS),0,N,
+102,DNB - Dermatology,PG Degree,Y,4
+103,GCEH,0,N,
+104,Certification in Personal Counsling,Certification,N,
+105,Post Graduate Diploma in Healthcare Management(PGDHM),Management,N,
+106,Fellowship in Lasers & Cosmetology,Fellowship,Y,5
+107,Fellowship In Anti-Aging And Aesthetic Medicine,Fellowship,Y,5
+108,Diploma in Practical Dermatology,PG Diploma,Y,3
+109,Fellow Hair Transplant Surgery,0,N,
+110,Fellowship in Lasers & Advanced Dermatology,Fellowship,Y,5
+111,DNB - Paediatrics,PG Degree,Y,4
+112,MRCPCH (UK),0,N,
+113,MDS - Oral Medicine and Radiology,PG Degree,Y,4
+114,Diploma in Obesity managemnt,PG Diploma,Y,3
+115,Certificate Course In Therapeutic Yoga,Certification,N,
+116,DNB - Nephrology,PG Degree,Y,4
+117,Certification in Aesthetic Dentistry,Certification,N,
+118,MRCP,0,N,
+119,Fellowship In Laryngology Bronchoesophagology,Fellowship,Y,5
+120,FAGE,0,N,
+121,Diploma in Medical Radio-Diagnosis,PG Diploma,Y,3
+122,Certification in Full Mouth Rehabilitation,Certification,N,
+123,Diploma in Acupuncture,Diploma,Y,1
+124,Diploma in Naturopathy & Yogic Science (DNYS),Diploma,Y,1
+125,Fellowship in Minimal Access Surgery,Fellowship,Y,5
+126,DGO,PG Diploma,Y,3
+127,Diplomate in Oral Implantology,Certification,N,
+128,Masters in Oral Implantology,PG Degree,Y,4
+129,Implant Externship Program,Training,1,
+130,Fellowship in Implantology,Fellowship,Y,5
+131,M.S. (Ayurved) Stri Roga & Prasuti Tantra,0,N,
+132,MS - Ayurvedic Gynecology & Obstetrics,PG Degree,Y,4
+133,MD - Pathology,PG Degree,Y,4
+134,Fellowship in Rheumatology,Fellowship,Y,5
+135,MBA,Management,N,
+136,D.Y.A,0,N,
+137,DVD,0,N,
+138,Diploma in Public Health,Diploma,Y,1
+139,PhD- Ayurveda,Fellowship,Y,5
+140,DM - Critical Care Medicine,Fellowship,Y,5
+141,Post Graduate Course in Diabetology,PG Degree,Y,4
+142,DNB - Otorhinolaryngology,PG Degree,Y,4
+143,BSAM,0,N,
+144,Certificate Course in Sports and Fitness Nutrition,0,N,
+145,Diploma in Advanced Skin and Hair Treatments,0,N,
+146,Doctor of Medicine (Alternate Medicine),0,N,
+147,Certificate in Cosmetology,Certification,N,
+148,MD - Skin,PG Degree,Y,4
+149,VD & Leprosy,0,N,
+150,MDS - Public Health Dentistry,PG Degree,Y,4
+151,Post Graduate Diploma In Yoga,PG Diploma,Y,3
+152,Diploma in ENT,PG Diploma,Y,3
+153,MA,0,N,
+154,DNHE,0,N,
+155,Diploma in Endoscopy,0,N,
+156,Diploma in Anesthesiology,0,N,
+157,MRCGP,0,N,
+158,MDS - Orthodontics,PG Degree,Y,4
+159,MD - Microbiology,PG Degree,Y,4
+160,Post-Graduate Certificate in Oral Implantology (PGCOI),0,N,
+161,DO,0,N,
+162,Diploma in Naturopathy & Yoga (NDDY),0,N,
+163,DNB - Dermatology & Venereology,PG Degree,Y,4
+164,Diploma in Dermatology & Venerology,0,N,
+165,DPM (Psychiatry),0,N,
+166,M.D. (Psychiatry),PG Degree,Y,4
+167,MD - Pharmacology,PG Degree,Y,4
+168,Diploma in Diabetology,0,N,
+169,"Fellowship in Diabetology(Royal Liverpool University Hospital, UK)",Fellowship,Y,5
+170,UK),Ignore,N,
+171,Diploma in Family Medicine (DFM),0,N,
+172,Post Graduate Diploma in Clinical Research (PGDCR),0,N,
+173,F.A.G.E,0,N,
+174,Diploma In Clinical Panchakarma,0,N,
+175,Diploma in Child Health (DCH),0,N,
+176,DNB - Pediatrics,PG Degree,Y,4
+177,DAA - Diploma in Allergy Asthma and Immunology,0,N,
+178,MS - Endocrinology & Diabetes,PG Degree,Y,4
+179,DM - Cardiology,Fellowship,Y,5
+180,FNB - Infectious Disease,0,N,
+181,DNB - General Medicine,PG Degree,Y,4
+182,Diploma in Tuberculosis and Chest Diseases (DTCD),0,N,
+183,Division of Clinical Psychology (DCP),0,N,
+184,MSc - Master of Oral Implantology (MOI),PG Degree,Y,4
+185,MD - Oncology,PG Degree,Y,4
+186,FCPS - Dermatology,0,N,
+187,Certificate in Child Health (CCH),0,N,
+188,Masters in Counselling and Psychotherapy,0,N,
+189,Diploma in Rheumatology,0,N,
+190,MCP(UCLA-USA),0,N,
+191,PhD - Neuropsychology,Fellowship,Y,5
+192,Fellowship in ENT,Fellowship,Y,5
+193,Diploma In Naturopathy (ND),0,N,
+194,PG Diploma in Sexual Medicine,PG Diploma,Y,3
+195,Diploma in Medical Law and Ethics (PGDMLE),0,N,
+196,MRCP (UK),0,N,
+197,MBA (Health Care),Management,N,
+198,Diplomate of American board of hair restoration surgery,0,N,
+199,Post Graduate Diploma in Diabetes,PG Diploma,Y,3
+200,MNAMS - Plastic Surgery,0,N,
+201,Certified in Hair Transplantation,0,N,
+202,PG Diploma In Clinical Cosmetology (PGDCC),PG Diploma,Y,3
+203,DORL (ENT),0,N,
+204,IDCC (ISCCM),0,N,
+205,MD - Family Medicine,PG Degree,Y,4
+206,Master of Public Health (MPH),0,N,
+207,Diploma in Cardiology,0,N,
+208,Fellowship In Cosmetic Dermatology,Fellowship,Y,5
+209,MD - Anaesthesiology,PG Degree,Y,4
+210,Ayurvedic panchkarma,0,N,
+211,Post Graduate Diploma in Dermotology (PGDD),0,N,
+212,Certificate of Oral Implantology,0,N,
+213,Certification in Laser Dentistry,0,N,
+214,Dip' NMD,0,N,
+215,PGMHA,0,N,
+216,Diploma in Hospital Management,Management,N,
+217,Certificate Course in Management of Thyroid Disorder USA),0,N,
+218,"Fellowship in Diabetology(Boston School of Medicine, USA)",Fellowship,Y,5
+219,USA),Ignore,N,
+220,PGDHHM,0,N,
+221,Post Graduate Diploma in Hospital & Healthcare Management,Management,N,
+222,FCSI,0,N,
+223,FSCAI,0,N,
+224,Master of Clinical Dentistry,PG Degree,Y,4
+225,Certified In Panchkarma,Certification,N,
+226,Certification In Yoga,Certification,N,
+227,Paanchabhautic Ayurveda Certificate,0,N,
+228,Diploma in Traditional Chinese Medicine,0,N,
+229,Diploma of Clinical Hypnotherapy,0,N,
+230,Fellowship in Diabetology,Fellowship,Y,5
+231,Diploma in Laser Dentistry,0,N,
+232,Diploma in Preventive & Promotive Healthcare,0,N,
+233,Integrated Clinical Hypnotherapy,0,N,
+234,Master of Oral Laser Applications,PG Degree,Y,4
+235,MSc - Psychology,PG Degree,Y,4
+236,Post Graduate Diploma in Family Medicine (PGDFM),0,N,
+237,MD - Ayurvedic Pharmacology,PG Degree,Y,4
+238,Certificate Endodontics & Pedodontics,0,N,
+239,Certified Inman Aligner,0,N,
+240,39 years experience,Ignore,N,
+241,Cert. (Prosthodontics),0,N,
+242,MD - Ayurvedic Obstetrics and Gynecology,PG Degree,Y,4
+243,Diploma in Hospital Administration,0,N,
+244,MCh - Urology,Fellowship,Y,5
+245,DNB - Urology/Genito - Urinary Surgery,PG Degree,Y,4
+246,FRCP - Endocrinology,0,N,
+247,LCEH,0,N,
+248,Nutrition Certification,0,N,
+249,Doctor of Homeopathic Medicine (HMD),0,N,
+250,Diploma in Implant Dentistry,0,N,
+251,Fellowship in Cosmetology,Fellowship,Y,5
+252,MD - Community Medicine,PG Degree,Y,4
+253,P.G.Hom.(London),0,N,
+254,fellowship in medical cosmetology,Fellowship,Y,5
+255,germany,0,N,
+256,Certified Advance Course In Endodontics,0,N,
+257,Diplomate of National Board Exam,0,N,
+258,Diploma in Implanthology,0,N,
+259,ECFMG (USA),0,N,
+260,Fellowship In Dermatosurgery,Fellowship,Y,5
+261,Fellowship in Pediatric Dermatology,Fellowship,Y,5
+262,CGO,0,N,
+263,Diploma in Trichology - Cosmetology,0,N,
+264,Diploma in Weight Loss,Diploma,Y,1
+265,EducationDiploma in Naturopathy and Yoga,0,N,
+266,P.G Diploma in Diabetes Management,PG Diploma,Y,3
+267,Post Graduate Diploma in Maternity and Child Health (PGDMCH),0,N,
+268,Fellowship SIB,Fellowship,Y,5
+269,DAA,0,N,
+270,DNB - Peripheral Vascular Surgery,PG Degree,Y,4
+271,FRACS,0,N,
+272,Diploma in Aesthetic Medicine,0,N,
+273,MCIP,0,N,
+274,PGDCFS,0,N,
+275,PGDFOS,0,N,
+276,Diploma in Journalism,0,N,
+277,MD - Homoeopathic Philosophy,PG Degree,Y,4
+278,MS - Counselling and Psychotherapy,PG Degree,Y,4
+279,MCh - Oncology,Fellowship,Y,5
+280,MNAMS - General Surgery,0,N,
+281,Diploma in Geriatric Medicine,0,N,
+282,M C P S,0,N,
+283,Fellowship In Infectious Disease,Fellowship,Y,5
+284,M Derm,0,N,
+285,FCAH (Fellow ship course in Advance Homoepath),0,N,
+286,MD - Pulmonary Medicine,PG Degree,Y,4
+287,BPTh/BPT,0,N,
+288,PGNAHI,0,N,
+289,CSD,0,N,
+290,MSc,0,N,
+291,PG in Diabetology,PG Degree,Y,4
+292,FCPS Skin & VD,0,N,
+293,M. D. IN KAYACHIKISTA,PG Degree,Y,4
+294,Diploma in Psychiatry,0,N,
+295,Diploma in Panchkarma Chikitsa,0,N,
+296,Fellowship and Diplomate in Implantology from ICOI (USA),Fellowship,Y,5
+297,MCh - Plastic Surgery,Fellowship,Y,5
+298,Fellowship in Cleft Lip & Palate,Fellowship,Y,5
+299,MD - Diabetology,PG Degree,Y,4
+300,Post Doctoral Fellowship in Diabetology,Fellowship,Y,5
+301,MD - Cardiology,PG Degree,Y,4
+302,MBA (HCS),Management,N,
+303,FFDRCSI,0,N,
+304,Fellowship in Applied Nutrition(FAN),Fellowship,Y,5
+305,PhD - Clinical Neuroscience (Pediatrics),Fellowship,Y,5
+306,Professional Diploma in Clinical Research (PDCR),0,N,
+307,FICOI,0,N,
+308,MD - Physician,PG Degree,Y,4
+309,BNYS,0,N,
+310,Advanced Certificate Course in Aesthetic Dentistry,0,N,
+311,Professional Implantology Training Course (PITC),0,N,
+312,FAGE- FELLOW,0,N,
+313,Comprehensive Course in Modern Endodontics,0,N,
+314,Indian Diploma Critical Care Medicine (IDCCM),0,N,
+315,Fellowship in Aesthetic Dentistry (FAD),Fellowship,Y,5
+316,Fellowship in Rhinology and Endoscopic Skull Base Surgery,Fellowship,Y,5
+317,Fellowship in Otology and Neurotology,Fellowship,Y,5
+318,Fellow of International Congress of Oral Implantologist,0,N,
+319,Post MD SR AIIMS,0,N,
+320,Fellowship in Head & Neck Oncology Surgery,Fellowship,Y,5
+321,Certificate in Dental Implantology,0,N,
+322,Certificate in Orthodontics,0,N,
+323,Bachelor of Chiropractic,B Degree,Y,2
+324,Diploma in Venereology,0,N,
+325,Certificate in Invisible Braces,0,N,
+326,Certification in Clear Aligners,0,N,
+327,Certification in “Preventing Chronic Pain: A Human Systems Approach”,0,N,
+328,Certification in “Vital Signs: Understanding What the Body Is Telling Us”,0,N,
+329,Diploma in Medical Trichology,0,N,
+330,B.Sc,B Degree,Y,2
+331,MBA - Healthcare Administration,0,N,
+332,MRCPsych,0,N,
+333,Diploma in Medical Cosmetology and Aesthetic Medicine,0,N,
+334,PG Diploma In Health & Hospital Management,Management,N,
+335,PG DIPLOMA IN MEDICAL TOURISM,Management,N,
+336,Fellowship in LASERs & Aesthetics,Fellowship,Y,5
+337,Diploma in Orthopaedics,0,N,
+338,DNB - General Surgery,PG Degree,Y,4
+339,MS - Paediatrics Surgery,PG Degree,Y,4
+340,DNB - Pediatric Surgery,PG Degree,Y,4
+341,One Year Certificate course in Hospital Management,Management,N,
+342,Certified Course in Yoga,0,N,
+343,DICOI,0,N,
+344,MBA - Hospital Management,Management,N,
+345,G.A.M.S,0,N,
+346,MS - Ophthalmology,PG Degree,Y,4
+347,Fellowship in Implant and Esthetic Dentistry,Fellowship,Y,5
+348,AOC in Aesthetic Dentistry,0,N,
+349,PGDE (Cosmetic & Esthetic Dentist),0,N,
+350,Invisalign Training Course,0,N,
+351,Post Graduate Diploma in Clinical Nutrition & Dietetics,0,N,
+352,Masters Diploma in Acupressure,0,N,
+353,MDS- Oral Pathology,PG Degree,Y,4
+354,Fellowship in Breast Surgery,Fellowship,Y,5
+355,Fellowship in Non-Invasive Cardiology (FIC),Fellowship,Y,5
+356,MAMS,0,N,
+357,FCPS - Mid. & Gynae,0,N,
+358,CVD,0,N,
+359,Diploma in Clinical Nutrition,0,N,
+360,MS - Ayurvedic General Surgery,PG Degree,Y,4
+361,MD - Yoga and Rehab,PG Degree,Y,4
+362,Certification in Infectious Diseases,0,N,
+363,Diploma in Tropical Medicine Health,0,N,
+364,Fellowship in Skull Base Surgery,Fellowship,Y,5
+365,TFO (USA),0,N,
+366,PG in Diabetology (USA),0,N,
+367,MDS - Orthodontics and Orofacial Orthopaedics,PG Degree,Y,4
+368,M.Med in Family Medicine,0,N,
+369,DIACH(Greece),0,N,
+370,Certificate Course in Advanced Homoeopathy (C.C.A.H),0,N,
+371,FCCM,0,N,
+372,FCCP - Pulmonary Medicine,0,N,
+373,Diploma of the Faculty of Family Planning (DFFP),0,N,
+374,Diploma in Sports Therapy,0,N,
+375,Post graduate diploma in Hospital Management,Management,N,
+376,Certification for Professional Chemical Peel Workshop,0,N,
+377,Certificate in Aesthetic Medicine,0,N,
+378,BUMS,0,N,
+379,Masters in Clinical Dermatology,0,N,
+380,PGCC - Rheumatology,0,N,
+381,MD - Opthalmology,PG Degree,Y,4
+382,MD - Kayachikitsalaya,0,N,
+383,MS - Implantolgy,PG Degree,Y,4
+384,Implantology ICOI(USA),0,N,
+385,Diploma in Diet and Nutrition,0,N,
+386,PGDHA,0,N,
+387,Certificate Course in Tuberculosis & Chest Diseases,0,N,
+388,Advanced Training Program in Diabetes Care,Training,1,
+389,PhD in Liberal Studies in Diabetology (Trinity College),Fellowship,Y,5
+390,CCEDM,0,N,
+391,CCMTD,0,N,
+392,CCDR,0,N,
+393,MDS - Implantology,PG Degree,Y,4
+394,MD - Obstetrics & Gynaecology,PG Degree,Y,4
+395,MD-DVL,0,N,
+396,Diploma in Beauty Therapy,0,N,
+397,Certificate Course In Cosmetic Dermatology & Lasers,0,N,
+398,PG Diploma in Trichology,0,N,
+399,Certificate in Botox,0,N,
+400,Fillers,0,N,
+401,Threadlifts,0,N,
+402,Advanced Certification in Clinical Diabetology,0,N,
+403,SCE Dermatology (RCP,0,N,
+404,Post Graduate Diploma in Orthodontics,0,N,
+405,CCD (Diabetology),0,N,
+406,MCh - Cardio Thoracic and Vascular Surgery,0,N,
+407,DM - Gastroenterology,Fellowship,Y,5
+408,FCPS - General Surgery,0,N,
+409,DM - Rheumatology,Fellowship,Y,5
+410,Fellowship in Dermatology,Fellowship,Y,5
+411,Training in Facial Aesthetics,0,N,
+412,Certificate in Health Management,Management,N,
+413,MD - Homeopathy Psychiatry,PG Degree,Y,4
+414,PGCAD,0,N,
+415,MRCP (Paed),0,N,
+416,Diplomate American Academy of Aesthetic Medicne,0,N,
+417,MS - Urology,PG Degree,Y,4
+418,MCh - Urology/Genito-Urinary Surgery,0,N,
+419,PG Diploma In Emergency Trauma Care,0,N,
+420,Post Graduate Diploma in Diabetology (PGDD)(Middlesex University,0,N,
+421,Fellowship in Orthopaedic Rehabilitation (FOR),Fellowship,Y,5
+422,MIDA,0,N,
+423,Certificate Course in Dental Lasers,0,N,
+424,Certificate Course in Implantology,0,N,
+425,DM - Endocrinology,Fellowship,Y,5
+426,PGCR,0,N,
+427,Diploma in Diabetes/Endocrinology (Middlesex University),0,N,
+428,MD - Paediatrics,PG Degree,Y,4
+429,MD - (Dermatology & STD),PG Degree,Y,4
+430,Diploma in Clinical Pathology,0,N,
+431,PG Diploma in Preventive and Promotive Health Care (PGD PPHC),0,N,
+432,Fellowship in Medical Cosmetology (FMC),Fellowship,Y,5
+433,MDS - Endodontics,PG Degree,Y,4
+434,MCh - Neuro Surgery,0,N,
+435,Fellowship in Cosmetic Surgery,Fellowship,Y,5
+436,DNB - Ophthalmology,PG Degree,Y,4
+437,Fellowship in Vitreo-Retina,Fellowship,Y,5
+438,MS - Orthopaedics,PG Degree,Y,4
+439,MNAMS (Membership of the National Academy),0,N,
+440,Post Graduate Diploma in Medicological Systems (PGDMS),0,N,
+441,Fellow of the Royal Australasian College of Surgeons,0,N,
+442,FRACS (General Surgery),0,N,
+443,Fellowship in Ayurvedic Medicine,Fellowship,Y,5
+444,DM - Oncology,Fellowship,Y,5
+445,DHMS,0,N,
+446,Fellowship in Endocrinology & Diabetes & Metabolism,Fellowship,Y,5
+447,Fellow of American College of Endocrinology(FACE),0,N,
+448,PG Diploma in Child Health,0,N,
+449,POST GRADUATE IN HOMOEOPATHY,0,N,
+450,Certified in Orthodontics,0,N,
+451,Certified BPS Dentist,0,N,
+452,Fellowship in Advanced Endoscopic Sinus Surgery,Fellowship,Y,5
+453,Degree in Dental Implant,0,N,
+454,Advanced Endotontic Course On Root Canal,0,N,
+455,Master In Counselling Psychology,0,N,
+456,Diploma in Diabetology (Mumbai University),0,N,
+457,D.Sc,0,N,
+458,Certification Course In Diabetes,Certification,N,
+459,Fellowship in Clinical Cardiology,Fellowship,Y,5
+460,Post Graduate Certificate in Advanced Oral Implantology,0,N,
+461,Ph.D Panchakarma,0,N,
+462,M.Ch,0,N,
+463,FICS,0,N,
+464,FRCS,0,N,
+465,PG Diploma in Panchakarma,0,N,
+466,F.C.I.P,0,N,
+467,MDS - Oral & Maxillofacial Pathology and Microbiology,PG Degree,Y,4
+468,M.Ch - Orthopaedics,0,N,
+469,Fellowship in Joint Replacement,Fellowship,Y,5
+470,Fellowship in Diabetology(Royal Liverpool Academy,Fellowship,Y,5
+471,FCD - Diabetology,0,N,
+472,PhD - Microbiology,Fellowship,Y,5
+473,DEMS,0,N,
+474,Member of Royal College of Emergency Medicine(MRCEM),0,N,
+475,Masters in Emergency Medicine,0,N,
+476,International Certificate in Implant Dentistry,0,N,
+477,Current Concepts in American Dentistry Advances in Implantology and Oral Rehabilitation,0,N,
+478,MSc - Forensic Odontology,PG Degree,Y,4
+479,MBA - Hospital Administration,0,N,
+480,MCh - Surgical Gastroenterology/G.I. Surgery,0,N,
+481,DNB - Infectious Disease,PG Degree,Y,4
+482,PGDMLS,0,N,
+483,MBA - HealthCare Management,Management,N,
+484,M.H.Sc-Diabetology,0,N,
+485,CCEBDM,0,N,
+486,Certificate Course in Nutrition and Dietetics,0,N,
+487,PhD - Acupuncture,Fellowship,Y,5
+488,BEMS,0,N,
+489,Fellowship in Gastroenterology,Fellowship,Y,5
+490,DNB - Oral & Maxillofacial Surgery,PG Degree,Y,4
+491,MD- Dravya Guna,0,N,
+492,Fellow of Advanced Micro ear Surgery,0,N,
+493,MDS- Periodontist & Implantalogist,PG Degree,Y,4
+494,Fellowship in Head & Neck Surgery,Fellowship,Y,5
+495,Fellowship Training in Intensive Care Medicine,Fellowship,Y,5
+496,Fellow of Indian College of Cardiology (FICC),0,N,
+497,MD - Anatomy,PG Degree,Y,4
+498,Fellowship in Child and Adolescent Psychiatry,Fellowship,Y,5
+499,Post Graduate Diploma in Periodontics and Implantology,0,N,
+500,Fellowship Program in Forensic Odontology,Fellowship,Y,5
+501,Fellowship In Phonosurgery,Fellowship,Y,5
+502,MA - Psychology,0,N,
+503,Post Graduate Course in Rheumatology,0,N,
+504,MD - Venereology,PG Degree,Y,4
+505,MD - Repertory,PG Degree,Y,4
+506,DNB - Obstetrics & Gynecology,PG Degree,Y,4
+507,Postgraduate Diploma Clinical Cardiology (PGDCC),0,N,
+508,Fellowship in Cardiac Rehabilitation,Fellowship,Y,5
+509,Certificate Course in Oral Implantology,0,N,
+510,MPH,0,N,
+511,Post Graduate Diploma in Holistic Healthcare,0,N,
+512,Graduate Diploma in Family Medicine,0,N,
+513,Singapore,0,N,
+514,D.Ortho Fellow Arthroscopy & Arthroplasty(AUST),0,N,
+515,DNB - Orthopedics/Orthopedic Surgery,PG Degree,Y,4
+516,MNAMS - DERMATOLOGY,0,N,
+517,Basic Life Support (BLS),0,N,
+518,ACLS,0,N,
+519,Advanced Trauma Life Support (ATLS),0,N,
+520,Diploma In Pharmacy,0,N,
+521,Advance Diploma in Nutrition and Dietetics,0,N,
+522,Certificate in Yoga & Meditation,0,N,
+523,DM - Nephrology,Fellowship,Y,5
+524,Diploma in Nutrition and Health Education,0,N,
+525,MSc - Clinical Dermatology,PG Degree,Y,4
+526,Advanced Certificate in Endodontics and Esthetics,0,N,
+527,Advanced Certificate Course in Dental Implants,0,N,
+528,B.Ac,0,N,
+529,FACC,0,N,
+530,Certificate Course in Positive Psychology,0,N,
+531,Clinical Nutritionist certifcate,0,N,
+532,M.Sc - Counselling and Family Therapy,0,N,
+533,D. Dermatology (Ay.),0,N,
+534,Master of Family Medicine,0,N,
+535,MS - Obstetrics & Gynaecology,PG Degree,Y,4
+536,MDS- Root Canal Specialist,PG Degree,Y,4
+537,FCPS (ENT),0,N,
+538,Certificate in Implantology,0,N,
+539,FCPS - Oto-Rhino-Laryngology,0,N,
+540,Certificate in Medical Cosmetology and Aesthetics,0,N,
+541,MCh - Head and Neck Oncology,0,N,
+542,DDVCPS,0,N,
+543,Diploma in Medical Cosmetology,0,N,
+544,FNB - Critical Care Medicine,0,N,
+545,European Diploma in Intensive Care Medicine (EDIC),0,N,
+546,CCST - Internal Medicine,0,N,
+547,CCST - Diabetes & Endocrinology,0,N,
+548,M.D. (E.H),0,N,
+549,MDS - Preventive & Community Dentistry,PG Degree,Y,4
+550,Diploma in Homoeopathy and Biochemistry,0,N,
+551,Diploma in Hair Restoration Surgery,0,N,
+552,Fellowship In Pediatric Otolaryngology,Fellowship,Y,5
+553,Fellowship in Diabetology(The University of Liverpool,Fellowship,Y,5
+554,Diploma in Industrial Hygiene,0,N,
+555,Diploma in Educational Psychology,0,N,
+556,Certificate in Food and Nutrition,0,N,
+557,Diploma in Clinical Dermatology (UK),0,N,
+558,F.S.R.H,0,N,
+559,FCPS - Medicine,0,N,
+560,MD - Nephrology,PG Degree,Y,4
+561,MCh - Surgical Oncology,0,N,
+562,Diploma in Gynaecology & Obstetrics,0,N,
+563,Fellow of the American Academy of Dermatology (FAAD),0,N,
+564,MDS - Prosthodontist & Oral Implantologist,PG Degree,Y,4
+565,MD - Homeo Organon,PG Degree,Y,4
+566,MFGDP - Membership of the Faculty of General Dental Practitioners,0,N,
+567,Membership of the Faculty of Dental Surgeons(MFDS),0,N,
+568,DNB - Respiratory Diseases,PG Degree,Y,4
+569,BIMS,0,N,
+570,MCPS,0,N,
+571,Certificate in Sports Nutrition,0,N,
+572,Post Graduate Diploma in Medical Cosmetology (PGDMC),0,N,
+573,Certificate in Pediatric Otolaryngology - Head and Neck Surgery,0,N,
+574,Diploma in Aesthetic Dermatology,0,N,
+575,MD - Infectious Diseases,PG Degree,Y,4
+576,Certificate Course of One Year in Dental Implants,0,N,
+577,Certificate Course in Advance Implantology,0,N,
+578,Certificate Course in Evidence Based Diabetes Management (CCEBDM),Certification,N,
+579,Certificate Course in Gestational Diabetes (CCGDM),Certification,N,
+580,MD - Physical Medicine & Rehabilitation,PG Degree,Y,4
+581,Diploma in Physical Medicine & Rehabilitation,0,N,
+582,Fellowship in Diabetology & Endocrinology,Fellowship,Y,5
+583,CCT - Endocrinology and Diabetes Mellitus,0,N,
+584,Certified Sinus lift surgeon,0,N,
+585,Diploma in Skin Polishing Technology,0,N,
+586,Diploma in Slimming & Laser Treatments,0,N,
+587,Certificate in Clinical Cosmetology,0,N,
+588,PCAD (USA),0,N,
+589,MD - Acupressure,PG Degree,Y,4
+590,PhD - Diabetes,Fellowship,Y,5
+591,Fellowship in Medical Cosmetology,Fellowship,Y,5
+592,Diploma in Cosmetic Dentistry,0,N,
+593,FRCS - Otolaryngology,0,N,
+594,DNB - Cardiology,PG Degree,Y,4
+595,Distance Fellowship in Diabetes Management,Fellowship,Y,5
+596,MBA - Healthcare Services,0,N,
+597,Post Graduate Diploma in Diabetology (PGDD)(Johns Hopkins University School of Medicine,0,N,
+598,Fellowship in Diabetology(Johns Hopkins University School of Medicine,Fellowship,Y,5
+599,DMD - Doctor of Dental Medicine,0,N,
+600,Post Graduate Diploma in Diabetology (PGDD)(Cardiff University,0,N,
+601,ACDMC,0,N,
+602,Diploma in Acupressure Therapy,0,N,
+603,Advanced Certificate Course In Diabetes,Certification,N,
+604,Post graduate certificate In sports Medicine,0,N,
+605,Clinical Cardiology Certification,0,N,
+606,FDS Surgical Oral Oncology,0,N,
+607,Diploma in Ultra Sonology,0,N,
+608,MD (HOM) - Paeditrics,PG Degree,Y,4
+609,Clinical Fellowship in Rhinology,Fellowship,Y,5
+610,MD - Ophthalmology,PG Degree,Y,4
+611,MDS - Oral Pathalogy & Microbiology,PG Degree,Y,4
+612,LLB,0,N,
+613,Fellow in Dermato - Surgery,0,N,
+614,Advance Fellowship in Laser & Dermatosurgery,Fellowship,Y,5
+615,PhD - Psychology,Fellowship,Y,5
+616,MD - Tuberculosis & Respiratory Diseases / Pulmonary Medicine,PG Degree,Y,4
+617,MDS - Oral Medicine,PG Degree,Y,4
+618,PG Certificate Course In Diabetes Education(PGDCE),0,N,
+619,PGD Yoga,0,N,
+620,MA (Yoga Shastra),0,N,
+621,Diploma in Yoga Shikshaka,0,N,
+622,Yoga Instructor's Course,0,N,
+623,D.H.M,0,N,
+624,MD - Physiology,PG Degree,Y,4
+625,F.A.M,0,N,
+626,Fellowship in laryngology,Fellowship,Y,5
+627,Ph. D - ENT,0,N,
+628,Certificate in Laser and Dermatology,0,N,
+629,Diploma in Skin & Vinereal Disease,0,N,
+630,Diploma of Nutrition & Diet Planning,0,N,
+631,Diploma in Diabetes,0,N,
+632,PG - Echocardiography,0,N,
+633,DM - Pulmonary Medicine & Critical Care Medicine,Fellowship,Y,5
+634,European Diploma in Respiratory Medicine,0,N,
+635,Post Graduate Diploma in Diabetic Education,0,N,
+636,Weight Management Consultant Certificate,0,N,
+637,Fellowship (Endoscopic Sinus Surgery),Fellowship,Y,5
+638,MD - TB & Chest,PG Degree,Y,4
+639,FRACP (Rheumatology),0,N,
+640,F.C.P.S (Dermatology),0,N,
+641,Post Graduate Diploma in Health Sciences (PGDHSc),0,N,
+642,Master of Health Sciences (MHSc),0,N,
+643,M. SC in YOGA,0,N,
+644,Diploma in Naturopathy & Yogic Science (DNYT),0,N,
+645,DYSc.,0,N,
+646,Post Graduate in Clinical Psychology,0,N,
+647,Certificate Course in Panchakarma,0,N,
+648,Certificate Course in Nadi Sutra,0,N,
+649,Post Graduate Certificate In Hiv And Std Manegement,0,N,
+650,Fellow Indian Academy Of Clinical Medicine,0,N,
+651,Advance Course In Osteoporosis,0,N,
+652,EULAR certificate for Rheumatic Diseases,0,N,
+653,MD - Radio Diagnosis/Radiology,PG Degree,Y,4
+654,CCT - Dermatology,0,N,
+655,Diploma in ABLS (USA),0,N,
+656,FPFA,0,N,
+657,MDS - Preventive and Public Health Dentistry,PG Degree,Y,4
+658,Certificate course in Reiki,0,N,
+659,Certificate in Nutrition and Health in Hospitalized,0,N,
+660,Certificate in Guidance and Counselling,0,N,
+661,Post graduate diploma in Health Management,Management,N,
+662,PGDPC (Post Graduation Diploma In Psychological Counselling),0,N,
+663,MD - Transfusion Medicine,PG Degree,Y,4
+664,MD - Bio-Chemistry,PG Degree,Y,4
+665,PGD ND,0,N,
+666,MBS (H),0,N,
+667,FIAMS,0,N,
+668,Certified in Pedodontics,0,N,
+669,FICS - ENT,0,N,
+670,FRHS,0,N,
+671,M.Sc - Biochemistry,0,N,
+672,Fellow of the Royal College of Surgeons of Ireland,0,N,
+673,Fundamental in Oral Implantology,0,N,
+674,Doctorate of Medicine in Electro Homoeopathy(MDEH),0,N,
+675,D.D,0,N,
+676,FCCS,0,N,
+677,DSM ( Siddha Medicine),0,N,
+678,D.Ac,0,N,
+679,MD - Social & Preventive Medicine / Community Medicine,PG Degree,Y,4
+680,PGCE(Endodontics),0,N,
+681,MS - Ayurvedic Ophthalmology,0,N,
+682,MNAMS - Nephrology,0,N,
+683,DAFPRS Fellowship in Aesthetic Surgery,Fellowship,Y,5
+684,Fellowship in Pediatric Endocrinology,Fellowship,Y,5
+685,Diploma in Urology,0,N,
+686,FRCPCH,0,N,
+687,M Phil Psychology,0,N,
+688,PDCC - Hand,0,N,
+689,PG in Laser Dentistry,0,N,
+690,Diploma in Obesity & Pain management,0,N,
+691,Post Graduate Diploma in Health,0,N,
+692,Family Welfare and Population,0,N,
+693,DIH,0,N,
+694,Doctor of Medicine,0,N,
+695,M.D. Panchakarma,0,N,
+696,M.Sc. Yoga and Naturopathy,0,N,
+697,Certificate in Botox and Fillers,0,N,
+698,MD - Pain Management,PG Degree,Y,4
+699,FICA,0,N,
+700,Diploma in Dietetics,0,N,
+701,Health and Nutrition (DDHN),0,N,
+702,DVL,0,N,
+703,Diplomate in Neuromuscular Functional Orthodontics And Gathology,0,N,
+704,FIMSA,0,N,
+705,MSc - Physiology,PG Degree,Y,4
+706,PG Diploma Clinical Research,0,N,
+707,Diploma in Dietetics & Public Health Nutrition (DDPHN),0,N,
+708,Robert Turner Diabetes Research Training,0,N,
+709,WHO/IDF/EASD Cambridge Diabetes Training,0,N,
+710,MS - Otrohinolaryngology,PG Degree,Y,4
+711,AMI Essentials- Applied Workshop for Aesthetic Procedures,0,N,
+712,Advanced Course in Cosmetology and Aesthetic Medicine,0,N,
+713,Fellowship in Micro Ear surgery,Fellowship,Y,5
+714,Fellowship in Snoring Surgery,Fellowship,Y,5
+715,Diploma in Industrial Health,0,N,
+716,MSc - Psychotherapy,PG Degree,Y,4
+717,Certification of Life Coach,0,N,
+718,PG - Homeo,0,N,
+719,M.A - Sanskrit,0,N,
+720,DNB - Endocrinology & Diabetes & Metabolism,PG Degree,Y,4
+721,Certified Yoga and Pranic healing Therapist,0,N,
+722,Certified National Diabetes Educator,0,N,
+723,Bachelor of Acupuncture,0,N,
+724,Certified Analytical Hypnotherapist,0,N,
+725,Diploma in Physiotherapy,0,N,
+726,Certificate in Medical Cosmetology,0,N,
+727,MD - Radiotherapy,PG Degree,Y,4
+728,Certificate course in SUJOK Therapy,0,N,
+729,Fellowship In Clinical Cosmetology,Fellowship,Y,5
+730,Cochlear Implant Surgery,0,N,
+731,Fellowship Cochlear Implant Training,Fellowship,Y,5
+732,Post Graduate Diploma in Psychological Counseling,0,N,
+733,Post Graduate Diploma in Diabetology (PGDD)(Madras Medical College),0,N,
+734,Diploma in Skin Treatments (UK),0,N,
+735,Certification of Aesthetic Dentistry & Periodontics,0,N,
+736,MCh - Burns & Plastic Surgery,0,N,
+737,EULAR Certificate in Rheumatology,0,N,
+738,FICO (UK),0,N,
+739,PhD - Dermatology & Venereology,Fellowship,Y,5
+740,DNB - Pulmonary Medicine,PG Degree,Y,4
+741,Post Graduate Certificate Course In Aesthetic Dentistry,0,N,
+742,FACP,0,N,
+743,Member of the Royal College of General Practitioners UK (MRCGP),0,N,
+744,MD - Geriatrics,PG Degree,Y,4
+745,MD AYURVED AND YOG,PG Degree,Y,4
+746,Training Certificate in Hair Transplant,0,N,
+747,Certificate Course in Gestational Diabetes Mellitus,0,N,
+748,P.G. Diploma in Yoga & Meditation,0,N,
+749,MD-Ayurvedic Vachaspati,PG Degree,Y,4
+750,Post Graduate Diploma in Sports Medicine,0,N,
+751,MSc. - Dermatology Skills and Treatment (University of Hertfordshire),PG Degree,Y,4
+752,MSc - Applied Psychology,PG Degree,Y,4
+753,FRCSEd,0,N,
+754,MSc - Endocrinology(UK),PG Degree,Y,4
+755,MCh - Cardio Thoracic Surgery,0,N,
+756,Masters in Surgery (MS),PG Degree,Y,4
+757,MD - (Medicine - Endocrinology),PG Degree,Y,4
+758,MCEM,0,N,
+759,DFM (UK),0,N,
+760,DIPLOMA IN TB AND CHEST DISEASES,0,N,
+761,Certification in Nutrition and Weight Management,0,N,
+762,DAT(Diploma in Accupressure and foot Reflexology),0,N,
+763,MASLP,0,N,
+764,Diploma in Radio Therapy,0,N,
+765,FDSRCS - Fellowship in Dental Surgery,Fellowship,Y,5
+766,Fellowship in ClearPath Aligners,Fellowship,Y,5
+767,FAMS - Dermatology,0,N,
+768,Diploma In Anatomy Physiology,0,N,
+769,PDCC - Pediatric Endocrinology,0,N,
+770,Diploma in Counselling and Psychotherapy,0,N,
+771,MD - CCM,PG Degree,Y,4
+772,Ph.D(Doctor of Philosophy),0,N,
+773,PG Diploma in Value Education and Spirtuality,0,N,
+774,Certified Implantologist,0,N,
+775,Fellowship in Surgical Oncology (Head & Neck),Fellowship,Y,5
+776,Continuing Education Certificate Program on Temporomandibular Joint Disorder and Orofacial Pain,0,N,
+777,Post Graduate in Homeopathy(london),0,N,
+778,DNB - Radiation Oncology,PG Degree,Y,4
+779,MDS - Operative Dentistry,PG Degree,Y,4
+780,DTCD(Diploma in TB and Chest Dieseas),0,N,
+781,Member Of The National Academy Of Medical Sciences,0,N,
+782,DNB - Radiotherapy,PG Degree,Y,4
+783,Post Graduate Diploma in Diabetology (PGDD)(University of Leicester,0,N,
+784,DRCOG,0,N,
+785,FDS Endodontics,0,N,
+786,Certified in Advanced Orthodontics,0,N,
+787,certification in smile designing,0,N,
+788,Yoga Teachers Training Course,0,N,
+789,PhD - Endodontics,Fellowship,Y,5
+790,Fellowship in TMJ Surgery,Fellowship,Y,5
+791,Certificate in Pulmonology,0,N,
+792,MRCOG(UK),0,N,
+793,Fellowship in Diabetes (UK),Fellowship,Y,5
+794,DNB -Chest,PG Degree,Y,4
+795,Certificate in Acupuncture,0,N,
+796,Doctor of Dental Surgery (DDS),0,N,
+797,Dip Otolaryngology and Head and neck Surgery,0,N,
+798,Diploma in Laparoscopy,0,N,
+799,FRCS - General Surgery (Upper GI),0,N,
+800,Diploma in Clinical Cosmetology,0,N,
+801,FACP (USA),0,N,
+802,Fellowship Program in Oral Implantology and LASER Dentistry,Fellowship,Y,5
+803,Diplomate from the American Board of Internal Medicine,0,N,
+804,Fellowship Program in Aesthetic Dentistry and Occlusion,Fellowship,Y,5
+805,Fellowship in Lifestyle Medicine,Fellowship,Y,5
+806,Integrated therapy in Cancer,0,N,
+807,Basic Course in Palliative Care,0,N,
+808,Fellowship Course in Homoeopathic Dermatology,Fellowship,Y,5
+809,Certificate Course in Orthodontics,0,N,
+810,FWFO,0,N,
+811,MD- Ayurveda Rasashastra,PG Degree,Y,4
+812,PG Dip (Medical Education),0,N,
+813,Implant Training Course- Nobel Biocare,0,N,
+814,MASTERS IN MEDICAL SCIENCE AND TECHNOLOGY,0,N,
+815,MRCP - General Medicine,0,N,
+816,Training in Surgical Oncology,0,N,
+817,DipFM,0,N,
+818,Certificate Course in Kshar Sutra Surgery,0,N,
+819,MA - Clinical Psychology,0,N,
+820,FCCP,0,N,
+821,Diploma of The Australian Institute of Dermatology,0,N,
+822,PG Diploma in Endocrinology,PG Diploma,Y,3
+823,FESC,0,N,
+824,BSc - Dietitics / Nutrition,0,N,
+825,Diploma in Dietatics & Clinical Nutrition,0,N,
+826,Fellowship in Cosmetology and Dermatosurgery,Fellowship,Y,5
+827,DVL - Dermatology & Venereology,0,N,
+828,DMS,0,N,
+829,Master of Clinical Embryology,0,N,
+830,B.Sc - Zoology (Hons.),0,N,
+831,Post Graduate Diploma in Emergency Medical Services,0,N,
+832,Fellowship in Emergency Medicine,Fellowship,Y,5
+833,Advanced Surgical Training In Implants,0,N,
+834,DHM,0,N,
+835,Post Graduate Diploma In Aesthetic & Restorative Dentistry,0,N,
+836,PG in Clinical Nutrition and Dietetics,0,N,
+837,Certificate of Completion of Specialist Training- Transplant Surgery (CCST-TS),0,N,
+838,Fellowship In Interventional Cardiology,Fellowship,Y,5
+839,MS - MS.Medicine,PG Degree,Y,4
+840,Fellowship in Nephrology,Fellowship,Y,5
+841,Certified in Inhalational Sedation,0,N,
+842,MSc. - Food Service Management & Dietetics,PG Degree,Y,4
+843,Diploma in Diabetes Management Certificate Program,0,N,
+844,DOMS,0,N,
+845,Diploma in Ayurvedic Medicine (DAM),PG Diploma,Y,3
+846,post graduate diploma in health Sciences in diabetology,PG Diploma,Y,3
+847,Certified in Ayurveda Approach to Diabetes mellitus,0,N,
+848,Certified in Ayurveda Beauty care,0,N,
+849,Diploma in International Academy of Aesthestic Medicine,PG Diploma,Y,3
+850,Masters Of Physiotheraphy,0,N,
+851,Fellowship In Critical Care,Fellowship,Y,5
+852,PG Diploma in Conservative Endodontics and Aesthetic Dentistry,PG Diploma,Y,3
+853,Endodontics and Aesthetic Dentistry,Ignore,N,
+854,Advanced Retreatment Course in RCT,0,N,
+855,Certified Course in Oral Surgery,0,N,
+856,Certification in Prosthodontics & Periodontology,0,N,
+857,Certified Advanced Course in Wisdom Tooth Extraction,0,N,
+858,Specialized Training in Otology,0,N,
+859,Advanced Endoscopy Training,0,N,
+860,Advance Course on Diagnosis of Allergy and Immunotherapy,0,N,
+861,MD - Dental Laser,PG Degree,Y,4
+862,MD - Aerospace Medicine,PG Degree,Y,4
+863,Post Graduate Diploma in Medical Law and Ethics,PG Diploma,Y,3
+864,Msc Clinical Research & Regulatory Affairs,PG Degree,Y,4
+865,M.D. (Ayu.),0,N,
+866,Panchkarma,0,N,
+867,Consultant Rheumatologist (Ayu.),0,N,
+868,PhD - Medicine,Fellowship,Y,5
+869,DM - Medical Oncology,Fellowship,Y,5
+870,MD - Practice Of Medicine,PG Degree,Y,4
+871,Fellowship IN FUE Hair Transplant Technique,Fellowship,Y,5
+872,PG Diploma in Human Rights,0,N,
+873,MD - Panchakarma,PG Degree,Y,4
+874,Fellowship in Sexual Medicine,Fellowship,Y,5
+875,MDS - Community Dentistry,PG Degree,Y,4
+876,Fellowship in Neuro-Otology and Skull Base Surgery (USA),Fellowship,Y,5
+877,Master of Arts - Yoga,0,N,
+878,Diploma in Opthalmology,0,N,
+879,M.Phil - Psychology,0,N,
+880,DEHM,0,N,
+881,DPH & H,0,N,
+882,Fellowship in Paediatric gastroenterology & Hepatology,Fellowship,Y,5
+883,Fellowship In Transplant Hepatology,Fellowship,Y,5
+884,PG in Diabetology(Johns Hopkins University School of Medicine,0,N,
+885,DNB - Neurology,PG Degree,Y,4
+886,DM - Pulmonary Medicine,Fellowship,Y,5
+887,Diploma in Dermatology (Alt),0,N,
+888,MDS - Oral Pathology & Bacteriology,PG Degree,Y,4
+889,FDIAB,0,N,
+890,PGDHSc,0,N,
+891,D-Pharm,0,N,
+892,Fellowship in Diabetes Management,Fellowship,Y,5
+893,FRCP - Internal Medicine,0,N,
+894,FAIS,0,N,
+895,FIAGES,0,N,
+896,MD / MS - Obstetrics & Gynaecology,PG Degree,Y,4
