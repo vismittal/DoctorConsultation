@@ -1,7 +1,7 @@
 install.packages('caret')
 install.packages('corrplot')   # used for making correlation plot
 install.packages('xgboost')    # used for building XGBoost model
-install.packages('cowplot')    # used for combining multiple plots 
+### install.packages('cowplot')    # used for combining multiple plots 
 install.packages('stringr')
 install.packages('DescTools')
 install.packages('sqldf')
