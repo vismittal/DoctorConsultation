@@ -1,14 +1,13 @@
 install.packages('caret')
 install.packages('corrplot')   # used for making correlation plot
 install.packages('xgboost')    # used for building XGBoost model
-### install.packages('cowplot')    # used for combining multiple plots 
+install.packages('cowplot')    # used for combining multiple plots 
 install.packages('stringr')
 install.packages('DescTools')
 install.packages('sqldf')
 install.packages('stringi')
 install.packages('gdata')
 install.packages('ngram')      # used for concatinating strings
-
 
 library(data.table) # used for reading and manipulation of data
 library(dplyr)      # used for data manipulation and joining
@@ -23,6 +22,8 @@ library(sqldf)
 library(stringi)
 library(gdata)
 library(ngram)
+
+setwd("D:/Vishal/IIMBAI/AI ML Training/Doctor Consultation")
 
 DoctorTrain <- read.csv(file = 'Final_Train.csv')
 head(DoctorTrain)
@@ -56,35 +57,56 @@ View(DoctorData)
 
 
 ##### Place
+
+DoctorData$Place <- str_replace(DoctorData$Place, "Dwarka, Sector 5, Delhi", "Dwarka Sector 5, Delhi")
+
 for (i in 1:7948) {
   a <- StrPos( x = as.character(DoctorData$Place[i]), pattern =',')
   DoctorData$Locality[i] <- substr(DoctorData$Place[i], 1, a-1)
   DoctorData$city[i] <- substr(DoctorData$Place[i], a+2, str_length(DoctorData$Place[i]))
 }
 
+a <- NA
 
 unique(DoctorData$Locality)
 unique(DoctorData$city)
+
+## sqldf("select * from DoctorData where Place like '%,%Sector 5%'")
 
 
 #### Qualification
 
 View(DoctorData)
 
+write.csv(x = DoctorData, "DoctorData.csv")
+
 ########################### Analyse Qualifications ###
 ### Remove unwanted ',' from Dermatology related qualifications
 
 strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology , Venereology%'")
-
-View (strDerma)
-
 StrVener <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Venereology & Leprosy%'")
+strSkin <- sqldf("select DIstinct Qualification from DoctorData where Qualification like 'MD - Skin%,%'")
+View(strSkin)
+strUK <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%,UK%'")
+View(strUK)
+strUSA <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%, USA%'")
+View(strUSA)
+strGer <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%,%Germany%'")
+View(strGer)
+strSGP <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%,%singapore%'")
+View(strSGP)
 
-write.csv(x = unique(trim(StrVener)), 'Venerelogy.csv')
-
-write.csv(strDerma, file = 'Derma.csv')
+#View (strDerma)
+#write.csv(x = unique(trim(StrVener)), 'Venerelogy.csv')
+#write.csv(strDerma, file = 'Derma.csv')
 DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Dermatology , Venereology', 'Dermatology Venereology')
 DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Dermatology, Venereology', 'Dermatology Venereology')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'MD - Skin,VD & Leprosy', 'MD - Skin VD & Leprosy')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, ',UK', ' UK')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, ', USA', ' USA')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Medicine, USA', 'Medicine USA')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, ',germany', ' germany')
+DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Medicine, Singapore', 'Medicine Singapore')
 
 strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology ,Venereology%'")
 
@@ -109,26 +131,11 @@ DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Endocrinology
                                         'Endocrinology & Diabetes & Metabolism')
 
 
-
-
 ## No of qualifications ###
 for (i in 1:7948) {
   b <- str_count(as.character(DoctorData$Qualification[i]), ",")
   DoctorData$cntQual[i] <- b+1 
 }
-
-###
-# b <- 0
-# c <- 0
-# for (i in 1:7948) {
-#   b <- str_count(as.character(DoctorData$Qualification[i]), ",")
-# 
-#     if (as.numeric(b) > as.numeric(c)) {
-#     c <- b
-#     d <- i
-#     qual <- as.character(DoctorData$Qualification[i])
-#   }
-# }
 
 DoctorData$DocNo <- NA
 View(DoctorData)
@@ -136,7 +143,7 @@ View(DoctorData)
 for (i in 1:7948) {
   
   DoctorData$DocNo[i] <- i
-  
+
 }
 
 DocQual <- read.csv(file = 'DocQual.csv')
@@ -146,21 +153,21 @@ View(DocQual)
 hist(DoctorData$cntQual)
 boxplot(x = DoctorData$cntQual)
 
-qualSplit <- unlist(strsplit(as.character(DoctorData$Qualification), ','))
+qualSplit <- trim(unlist(strsplit(as.character(DoctorData$Qualification), ',')))
 qualSplit
 
 doctor_uid_required=rep(DoctorData$DocNo, DoctorData$cntQual)
-
 doctor_qual_df=data.frame(doctor_uid_required, qualSplit)
-doctor_qual_df
+View(doctor_qual_df)
+
+#write.csv(doctor_qual_df, 'DocQual.csv')
 
 QualificationUnq = unique(trim(doctor_qual_df$qualSplit))
 View(QualificationUnq)
 
-write.csv(x = QualificationUnq, file = 'QualificationUniq.csv')
+write.csv(x = QualificationUnq, file = 'QualificationUniq40.csv')
 
-
-QualLevel <- read.csv(file = 'QualificationUniq 30.csv')
+QualLevel <- read.csv(file = 'QualificationWithLevel.csv')
 View(QualLevel)
 
 ### Doctor to highest level of qualification
@@ -168,36 +175,78 @@ View(QualLevel)
 DoctorData$qualLevel <- NA
 DoctorData$Seq1 <- NA
 
+#View(doctor_qual_df)
+#View(QualLevel)
+
 k <- 0
 
 for (k in 1:7948) {
-
+  
   print (concatenate('k == ', k))
-    
   DocNo <- k
-  
   print (concatenate('DocNo == ', DocNo))
-  
+
   sqlStrQual <- concatenate('select * 
-          from doctor_qual_df,  QualLevel
-          on trim(QualLevel.Qualification) = trim(doctor_qual_df.qualSplit)
-          where doctor_qual_df.doctor_uid_required = ', DocNo ,' order by doctor_qual_df.doctor_uid_required,
-          QualLevel.Seq1 desc')
+                            from doctor_qual_df,  QualLevel
+                            on trim(QualLevel.Qualification) = trim(doctor_qual_df.qualSplit)
+                            where doctor_qual_df.doctor_uid_required = ', DocNo ,' order by doctor_qual_df.doctor_uid_required,
+                            QualLevel.Seq1 desc')
   
-  #print (concatenate('sqlStrQual == ', sqlStrQual))
+  print (concatenate('sqlStrQual == ', sqlStrQual))
   
   a <- sqldf(sqlStrQual)
   
-  
-  print(a)
+  #View(a)  
+  #print(a)
   
   DoctorData$qualLevel [DocNo] <- as.character(a[1,5])
-  DoctorData$Seq1 [DocNo] <- a[1,7]
-  
+  DoctorData$Seq1 [DocNo] <- a[1,6]
+  DoctorData[DocNo, ]
   a <- NA
   
 }
 
 View (DoctorData)
-
 write.csv(x = DoctorData, 'DoctorData.csv')
+
+View(sqldf("select * from DoctorData
+                            where DoctorData.Seq1 = '0'"))
+
+View(sqldf("select * from DoctorData
+                            where DoctorData.Seq1 IS NULL"))
+
+
+unique(DoctorData$Seq1)
+
+##### Features for location cost of living
+
+CostCity <- read.csv('CostOfLivingIndexMapping.csv')
+unique(DoctorData$city)
+
+DataDataWithCost <- sqldf('select DoctorData.*, CostCity.CostOfLivingIndex, CostCity.LocalPurchasingPowerIndex 
+        from DoctorData left join CostCity
+        on DoctorData.city = CostCity.CityName')
+
+View(DataDataWithCost)
+
+write.csv(DataDataWithCost, 'DataDataWithCost.csv')
+
+############################### Split the data back into train and test
+
+DoctorTrainWithFea <- sqldf("select * from DataDataWithCost
+                            where DataDataWithCost.Fees != 'NA'")
+
+View(DoctorTrainWithFea)
+
+DoctorTestWithFea <- sqldf("select * from DataDataWithCost
+                            where DataDataWithCost.Fees IS NULL")
+View(DoctorTestWithFea)
+
+############################# Data cleaning Train data only ####
+
+unique(DoctorTrainWithFea$Seq1)
+
+DoctorTrainWithFea$se
+
+View(sqldf("select * from DoctorTrainWithFea
+                            where DoctorTrainWithFea.Seq1 = '0'"))
