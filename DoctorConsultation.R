@@ -8,6 +8,8 @@ install.packages('sqldf')
 install.packages('stringi')
 install.packages('gdata')
 install.packages('ngram')      # used for concatinating strings
+install.packages('pivottabler')
+
 
 library(data.table) # used for reading and manipulation of data
 library(dplyr)      # used for data manipulation and joining
@@ -22,6 +24,7 @@ library(sqldf)
 library(stringi)
 library(gdata)
 library(ngram)
+library(pivottabler)
 
 setwd("D:/Vishal/IIMBAI/AI ML Training/Doctor Consultation")
 
@@ -163,7 +166,7 @@ View(QualificationUnq)
 
 write.csv(x = QualificationUnq, file = 'QualificationUnique.csv')
 
-QualLevel <- read.csv(file = 'QualificationWithLevel.csv')
+QualLevel <- read.csv(file = 'QualificationWithLevel01.csv')
 View(QualLevel)
 
 ### Doctor to highest level of qualification
@@ -178,7 +181,7 @@ k <- 0
 
 for (k in 1:7948) {
   
-  print (concatenate('k == ', k))
+  #print (concatenate('k == ', k))
   DocNo <- k
   print (concatenate('DocNo == ', DocNo))
 
@@ -187,14 +190,12 @@ for (k in 1:7948) {
                             on trim(QualLevel.Qualification) = trim(doctor_qual_df.qualSplit)
                             where doctor_qual_df.doctor_uid_required = ', DocNo ,' order by doctor_qual_df.doctor_uid_required,
                             QualLevel.Seq1 desc')
-  
   #print (concatenate('sqlStrQual == ', sqlStrQual))
   
   a <- sqldf(sqlStrQual)
   
   #View(a)  
   #print(a)
-  
   DoctorData$qualLevel [DocNo] <- as.character(a[1,4])
   DoctorData$Seq1 [DocNo] <- a[1,5]
   DoctorData[DocNo, ]
@@ -224,7 +225,7 @@ DataDataWithCost <- sqldf('select DoctorData.*, CostCity.CostOfLivingIndex, Cost
 
 View(DataDataWithCost)
 
-write.csv(DataDataWithCost, 'DataDataWithCost.csv')
+write.csv(DataDataWithCost, 'DocDataWithCost.csv')
 
 ############################### Split the data back into train and test
 
@@ -241,8 +242,42 @@ View(DoctorTestWithFea)
 
 unique(DoctorTrainWithFea$Seq1)
 
-DoctorTrainWithFea$se
+DoctorTrainWithFea$Qualification
 
 View(sqldf("select * from DoctorTrainWithFea
                             where DoctorTrainWithFea.Seq1 = '0'"))
 
+### Ignore the rows with degree as "Get inspired by remarkable stories of people like you"
+
+
+DoctorTrainWithFea01 <- sqldf("select * from DoctorTrainWithFea
+                            where DoctorTrainWithFea.Qualification 
+                              != 'Get inspired by remarkable stories of people like you'")
+
+
+View(sqldf("select * from DoctorTrainWithFea01
+                            where Seq1 = '0'"))
+
+docpivot <- (sqldf("select * from DoctorTrainWithFea01
+                            where Profile = 'General Medicine'"))
+
+qhpvt(docpivot, "Profile", "qualLevel", "n()")
+### Most of the doctors on General Medicince are PG Degree, so map this one doctor to PG Degree
+
+################ Create a matirx with relavant columns only
+
+DoctorTrainWithFea02 <- (sqldf("select  Fees, Rating, Experience1, Profile,cntQual,
+                                  Seq1,CostOfLivingIndex, LocalPurchasingPowerIndex
+                                    from DoctorTrainWithFea01"))
+
+View(DoctorTrainWithFea02)
+
+DoctorTrainWithFea02$Seq1 <- as.factor(DoctorTrainWithFea02$Seq1)
+
+###### Make a corplot
+
+corrplot(DoctorTrainWithFea02)
+
+cor_train = cor(DoctorTrainWithFea02,c("kendall"))
+
+corrplot(cor_train, method = "pie", type = "lower", tl.cex = 0.9)
