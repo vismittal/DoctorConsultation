@@ -108,11 +108,9 @@ DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Medicine, USA
 DoctorData$Qualification <- str_replace(DoctorData$Qualification, ',germany', ' germany')
 DoctorData$Qualification <- str_replace(DoctorData$Qualification, 'Medicine, Singapore', 'Medicine Singapore')
 
-strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology ,Venereology%'")
-
-StrMS <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%MS,%'")
-
-View(StrMS)
+#strDerma <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Dermatology ,Venereology%'")
+#StrMS <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%MS,%'")
+#View(StrMS)
 
 StrDiabetes <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Diabetes%'")
 StrDiabetes <- sqldf("select DIstinct Qualification from DoctorData where Qualification like '%Diabetes & Metabolism%'")
@@ -141,9 +139,7 @@ DoctorData$DocNo <- NA
 View(DoctorData)
 
 for (i in 1:7948) {
-  
   DoctorData$DocNo[i] <- i
-
 }
 
 DocQual <- read.csv(file = 'DocQual.csv')
@@ -165,7 +161,7 @@ View(doctor_qual_df)
 QualificationUnq = unique(trim(doctor_qual_df$qualSplit))
 View(QualificationUnq)
 
-write.csv(x = QualificationUnq, file = 'QualificationUniq40.csv')
+write.csv(x = QualificationUnq, file = 'QualificationUnique.csv')
 
 QualLevel <- read.csv(file = 'QualificationWithLevel.csv')
 View(QualLevel)
@@ -192,18 +188,17 @@ for (k in 1:7948) {
                             where doctor_qual_df.doctor_uid_required = ', DocNo ,' order by doctor_qual_df.doctor_uid_required,
                             QualLevel.Seq1 desc')
   
-  print (concatenate('sqlStrQual == ', sqlStrQual))
+  #print (concatenate('sqlStrQual == ', sqlStrQual))
   
   a <- sqldf(sqlStrQual)
   
   #View(a)  
   #print(a)
   
-  DoctorData$qualLevel [DocNo] <- as.character(a[1,5])
-  DoctorData$Seq1 [DocNo] <- a[1,6]
+  DoctorData$qualLevel [DocNo] <- as.character(a[1,4])
+  DoctorData$Seq1 [DocNo] <- a[1,5]
   DoctorData[DocNo, ]
   a <- NA
-  
 }
 
 View (DoctorData)
@@ -215,8 +210,8 @@ View(sqldf("select * from DoctorData
 View(sqldf("select * from DoctorData
                             where DoctorData.Seq1 IS NULL"))
 
-
 unique(DoctorData$Seq1)
+
 
 ##### Features for location cost of living
 
@@ -250,3 +245,4 @@ DoctorTrainWithFea$se
 
 View(sqldf("select * from DoctorTrainWithFea
                             where DoctorTrainWithFea.Seq1 = '0'"))
+
